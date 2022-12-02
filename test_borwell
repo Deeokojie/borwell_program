@@ -1,0 +1,26 @@
+from borwell import area, volume, get_paintable_area
+
+def area_computes_correctlty():
+a = area(3, 4)
+assert a == 12 
+
+b = area(5, 10)
+assert b == 50
+
+def volume_computes_correctly():
+v = volume(3, 4, 10)
+assert v == 120
+
+w = volue(5, 10, 2)
+assert w == 100
+
+def retrive_sucessfully_paintable_area():
+cubevolume = 120
+
+paintable_area = get_paintable_area(4, 3)
+assert paintable_area == (4 * 3) * 4
+assert paintable_area != cubevolume
+
+area_computes_correctly()
+volume_computes_correctly()
+retrive_sucessfully_paintable_area()
