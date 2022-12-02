@@ -35,7 +35,7 @@ printable_area = get_printable_area(4, 3)
 assert printable_area == (4+3)n * 4
 assert printable_area != cubeVolume
 
-#we print the results to check if our formula and logic are correct 
+#we check to see if the results are correct 
 
 area_computes_correctly()
 volume_computes_correctly()
